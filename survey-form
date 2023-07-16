@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+      <p id="description" class="joy">This survey is aimed at improving this platform. Thank you for your time.</p>
+  <form id="survey-form" />
+  <fieldset>
+    <div class="one">
+        <label id="name-label">Name <input id="name" type="text" placeholder="Input your name" required /></label>
+    </div>
+    <div class="two">    
+        <label id="email-label">Email <input id="email" type="email" placeholder="alice@mail.com" required /></label>
+     </div>
+     <div class="three">   
+<label id="number-label">Age <input id="number" type="number" min="18" max="120" placeholder="Age" /></label>
+     </div>
+   </fieldset>
+   <fieldset>
+     <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Google</option>
+            <option value="2">YouTube</option>
+            <option value="3">Friends</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+   </fieldset>
+   <fieldset>     
+<p>How was your experience with us?</p>
+<label for="horrible"><input type="radio" id="horrible" value="horrible" name="experience" class="inline" />Horrible</label>
+        <label for="not sure"><input type="radio" id="not sure" value="not sure" name="experience" class="inline" />Not sure</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.tracy.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      <label for="bio">Write your bio:
+          <textarea id="bio" name="bio" rows="5" cols="30" placeholder="This is my bio..."></textarea>
+        </label>
+   </fieldset>
+      <input id="submit" type="submit" value="Submit"</input>
+    </form>
+  </body>
+</html>
